@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Contact from "@/app/component/Contact";
 import Menu from "@/app/component/Menu";
 
 const LeftSide = () => {
-  const [isVisible, setIsVisible] = React.useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   const handleClick = () => {
     setIsVisible((prev) => !prev);
